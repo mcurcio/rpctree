@@ -2,7 +2,7 @@
 
 let rpctree = require('..');
 let ArgumentList = rpctree.ArgumentList;
-let DataNode = rpctree.DataNode;
+let DataNode = rpctree.Store;
 
 describe('DataNode', () => {
     it('functional', () => {

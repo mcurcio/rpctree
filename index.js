@@ -2,5 +2,5 @@
 
 exports = module.exports = require("./lib/types.js");
 
-exports.DataNode = require('./lib/store.js').DataNode;
+exports.Store = require('./lib/store.js').Store;
 exports.Node = require('./lib/tree.js').Node;
