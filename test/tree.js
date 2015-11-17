@@ -85,4 +85,17 @@ describe('Tree', () => {
             'removed-c'
         ]);
     });
+
+    it('find', () => {
+        let root = new Node;
+        root.add(new Node('a'));
+        root.add(new Node('b'));
+        let c = new Node('c');
+        root.add(c);
+        c.add(new Node('d'));
+
+        root.find('a').should.be.ok;
+        root.find('c/d').should.be.ok;
+        (() => { root.find('x'); }).should.throw();
+    });
 });
